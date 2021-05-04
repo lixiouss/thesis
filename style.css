@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+.greeting {
+    margin-top: 5%;
+}
+
+.greeting_head {
+    text-align: center;
+    font-size: 40px;
+}
+
+.greeting_body {
+    margin-right: 35%;
+    margin-left: 2%;
+    margin-top: 40px;
+}
+
+.greeting_body2 {
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 2%;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.start_btn {
+    font-size: 35px;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.start_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.start_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.start_btn:hover span {
+    padding-right: 25px;
+}
+
+.start_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* story.html CSS */
+.begin_btn,
+.info_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.begin_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.info_box {
+    width: 540px;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+.info_box .info_title {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info_list {
+    padding: 15px 35px;
+}
+
+.info_box .info_list .info {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.info_box .info_list .info span {
+    font-weight: 600;
+    color: maroon;
+}
+
+.info_box .continue_btn {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid maroon;
+}
+
+.info_box .continue_btn button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid lightskyblue;
+    background: rgb(15, 119, 223);
+    border-radius: 5px;
+    color: lightyellow;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.continue_btn button.continue {
+    color: lightyellow;
+    background: rgb(15, 119, 223);
+}
+
+.continue_btn button.continue:hover {
+    color: rgb(15, 119, 223);
+    background: moccasin;
+}
+
+.narrative_box {
+    width: 50%;
+    border: 10px solid rgb(121, 173, 233);
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+}
